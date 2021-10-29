@@ -1,8 +1,12 @@
 name: clac repo check
-on: [push]
-jobs:
-  Checking :
+on: [push, pull_request] 
+jobs:  
+  insall-python:
     runs-on: ubuntu-latest
     steps:
-      - run : echo "Running Workflow "
+    - run: echo "Running Python PRogram "
+    - run: echo "${{python3.10 calc.py}}"
       
+
+  
+  
