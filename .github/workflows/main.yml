@@ -6,8 +6,8 @@ jobs:
     steps:
     - run: echo "Installing pip"
     - run: pip install --upgrade pip
-    - run: pip install pylint 
-    - run: pylint --version
+    - run: pip install black
+    - run: black --check .
 
   
   
