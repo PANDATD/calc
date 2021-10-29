@@ -7,7 +7,7 @@ def add(num1: int| float, num2: int| float)-> int|float:
   """
   print(f" Addition of {num1} + {num2} = {num1+num2}",end='\n')
 
-add(10,10.5)
+add(10,10.59)
 
 def sub(num:int, num2:int)->int:
 	"""This funcation return substrction of two numbers"""
