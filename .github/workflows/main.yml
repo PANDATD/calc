@@ -4,10 +4,10 @@ jobs:
   insall-python:
     runs-on: ubuntu-latest
     steps:
+    - working-directory: 'PANDATD/calc'
     - run: echo "Installing pip"
     - run: pip install --upgrade pip
-    - run: pip install black
-    - run: black calc.py/
+    - run: black calc.py
 
   
   
