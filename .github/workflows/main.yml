@@ -9,11 +9,13 @@ jobs:
        - run: pip install black 
        - run: sudo apt update 
        - run: sudo apt install git 
+       - run: git config --global user.name "Tejas Dixit"
+       - run: git config --global user.email tejasdixit17@gmail.com
        - run: git clone 'https://github.com/PANDATD/calc.git'
        - run: cd calc
        - run: black . 
-       - run: git config --global user.name "Tejas Dixit"
-       - run: git config --global user.email tejasdixit17@gmail.com
+       - run: cd ..
+       - run: git add .
        - run: sudo git commit -m " commit from main.yml code is black formatted"
        - run: sudo git push main
        - run: echo " Code is able to Black Format and all checks are completed"
