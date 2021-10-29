@@ -7,7 +7,7 @@ jobs:
     - run: echo "Installing pip"
     - run: pip install --upgrade pip
     - run: pip install pylint 
-    - run: pylint `ls -R|grep .py$|xargs`
+    - run: pylint `--init-hook=<code>`
 
   
   
