@@ -6,7 +6,7 @@ jobs:
     steps:
     - run: echo "Installing pip"
     - run: pip install --upgrade pip
-    - run: echo "${{black --help --check --diff .}}"
+    - run: echo "${{black --help}}"
 
   
   
