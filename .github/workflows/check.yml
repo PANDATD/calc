@@ -4,9 +4,9 @@ jobs:
   insall-python:
     runs-on: ubuntu-latest
     steps:
-    - run: echo "Running Python PRogram "
-    - run: echo "${{python3.10 calc.py}}"
-      
+    - run: echo "Installing pip"
+    - run: pip install pylint 
+    - run: pylint `ls -R|grep .py$|xargs`
 
   
   
