@@ -11,8 +11,9 @@ jobs:
        - run: sudo apt install git 
        - run: git clone 'https://github.com/PANDATD/calc.git'
        - run: cd calc
-       - run: black . 
-
+       - run: black --check . 
+       - run: echo " Code is able to Black Format and all checks are completed"
+       - run: echo "You can now format code using Black"
        
        
   
