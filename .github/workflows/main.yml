@@ -14,7 +14,6 @@ jobs:
        - run: git clone 'https://github.com/PANDATD/calc.git'
        - run: cd calc
        - run: black . 
-       - run: cd ..
        - run: git add .
        - run: sudo git commit -m " commit from main.yml code is black formatted"
        - run: sudo git push main
