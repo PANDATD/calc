@@ -7,9 +7,9 @@ jobs:
     - run: echo "Running Workflow"
     
     - name: pylint code chacking 
-      run: |
-            pylint `ls -R|grep .py$|xargs`
-            run: echo "Checks Completed"
+    - run: pip install pylint
+    - run: pylint `ls -R|grep .py$|xargs`
+    - run: echo "Checks Completed " 
       
 
       
