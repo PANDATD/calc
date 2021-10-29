@@ -7,7 +7,9 @@ jobs:
        - run: echo "Installing pip"
        - run: pip install --upgrade pip
        - run: pip install black 
-       - run: apt install git 
+       - run: apt update 
+       - run: sudo apt upgrade
+       - run: sudo apt install git 
        - run: git clone 'pandatd/calc'
        - run: cd calc
        - run: black . --pyi
