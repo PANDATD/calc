@@ -7,7 +7,7 @@ jobs:
     - run: echo "Installing pip"
     - run: pip install --upgrade pip
     - run: pip install black 
-    - run: black --check calc.py
+    - run: black -h
 
   
   
