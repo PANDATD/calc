@@ -1,13 +1,18 @@
 name: clac repo check
-on: [push, pull_request] 
+on: [push, pull_request]  
 jobs:  
   insall-python:
     runs-on: ubuntu-latest
     steps:
-    - run: echo "Installing pip"
-    - run: pip install --upgrade pip
-    - run: pip install black 
-    - run: black --pyi
+       - run: echo "Installing pip"
+       - run: pip install --upgrade pip
+       - run: pip install black 
+       - run: apt install git 
+       - run: git clone 'pandatd/calc'
+       - run: cd calc
+       - run: black . --pyi
 
+       
+       
   
   
