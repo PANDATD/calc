@@ -4,8 +4,9 @@ jobs:
   insall-python:
     runs-on: ubuntu-latest
     steps:
+    - run: echo "Install compleate"
     - run: echo "Running Python PRogram "
-    - run: echo "${{python calc.py}}"
+    
       
 
   
