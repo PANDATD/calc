@@ -1,5 +1,4 @@
 #!/bin/python3.10
-
 def add(num1: int| float, num2: int| float)-> int|float:
   """
   Parametrs : num1: int | Float
