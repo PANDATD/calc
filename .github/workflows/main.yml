@@ -11,7 +11,7 @@ jobs:
        - run: sudo apt install git 
        - run: git clone 'https://github.com/PANDATD/calc.git'
        - run: cd calc
-       - run: black . --pyi
+       - run: black . 
 
        
        
