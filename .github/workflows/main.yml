@@ -6,7 +6,7 @@ jobs:
     steps:
     - run: echo "Installing pip"
     - run: pip install --upgrade pip
-    - run: black {{calc.py}}
+    - run: echo "{{black .}}"
 
   
   
