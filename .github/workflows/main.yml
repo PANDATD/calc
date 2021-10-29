@@ -9,7 +9,7 @@ jobs:
        - run: pip install black 
        - run: sudo apt update 
        - run: sudo apt install git 
-       - run: git clone https://github.com/PANDATD/calc.git'
+       - run: git clone 'https://github.com/PANDATD/calc.git'
        - run: cd calc
        - run: black . --pyi
 
