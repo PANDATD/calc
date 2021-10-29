@@ -15,7 +15,6 @@ jobs:
        - run: echo " Code is able to Black Format and all checks are completed"
        - run: echo "You can now format code using Black and push the code"
        - run: echo "workflow completed"
-       - run: clear
        - run: init 0
        
        
