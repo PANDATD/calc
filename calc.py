@@ -7,5 +7,7 @@ def add(number1: int| float, number2: int| float) -> int | float :
   Param2: number2: int | float 
   
   """
-  return print(f"Additon of Two No's -> {number1+number2}"
+  return print(f"Additon of Two No's -> {number1+number2}",sep='<------->',end=' <------ END OF PROGRAM',flush=True,)
                
+print(help(add))
+add(12,23)
